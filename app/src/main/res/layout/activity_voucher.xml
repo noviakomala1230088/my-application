@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".voucher">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/architects_daughter"
+        android:text="Voucher Kamu Hari Ini!"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/multiAutoCompleteTextView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiAutoCompleteTextView2"
+        android:layout_width="381dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="114dp"
+        android:layout_marginEnd="18dp"
+        android:text="Ayo kumpulkan bintang dan dapatkan potongan harga di restoran favorit mu."
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiAutoCompleteTextView3"
+        android:layout_width="204dp"
+        android:layout_height="71dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="285dp"
+        android:text="Bintang yang telah kamu kumpulkan."
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multiAutoCompleteTextView2"
+        app:layout_constraintVertical_bias="0.469" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="236dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/multiAutoCompleteTextView3"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="@+id/imageView13"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.418"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="280dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.418"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
